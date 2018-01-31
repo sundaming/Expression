@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的宝儿</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">*2017—11-09 .</span><br />
+				<span class="space"/><span class="comments">**/</span><br />
+				Boy name = <span class="keyword">大明.<br />
+				Girl name = <span class="keyword">菜菜.<br /> <br>
+				<span class="comments"> I found a love for me ,</span><br />
+				<span class="keyword">------我找到属于我的爱</span><br />
+				<span class="comments">Darling, just dive right in and follow my lead,</span><br />
+				<span class="keyword">------亲爱的 就坠入爱中 跟着我来</span><br />
+				<span class="comments">Well, I found a girl, beautiful and sweet,</span><br />
+				<span class="keyword">------我寻得这么一个女孩 漂亮窝心让人心暖</span><br />
+				<span class="comments">Oh, I never knew you were the someone waiting for me，</span><br />
+				<span class="keyword">------我从没想过你就是那个为我等候着的人</span><br />
+				<span class="comments">Cause we were just kids when we fell in love，</span><br />
+				<span class="keyword">------当我们最初爱上彼此时 都还是个孩子</span><br />
+				<span class="comments">Not knowing what it was，</span><br />
+				<span class="keyword">------不懂得爱的样子</span><br />
+				<span class="comments">Darling, just hold my hand，</span><br />
+				<span class="keyword">------亲爱的 就握着握手</span><br />
+				<span class="comments">I will not give you up this time，</span><br />
+				<span class="keyword">------但这一次我不会再让爱流逝</span><br />
+				<span class="comments">But darling, just kiss me slow, your heart is all I own，</span><br />
+				<span class="keyword">------亲爱的 就慢慢吻着我 你的心是我全部所得</span><br />
+				<span class="comments">And in your eyes you're holding mine，</span><br />
+				<span class="keyword">------在你眼里我看到你也将我心占据着</span><br />
+				<span class="comments">She shares my dreams, I hope that someday I'll share her home</span><br />
+				<span class="keyword">------她对我分享着她的梦想 我希望有天我能许她个家</span><br />
+				<span class="comments">I found a love, to carry more than just my secrets</span><br />
+				<span class="keyword">------我寻得这样一份爱 对它慎重过我所有秘密</span><br />
+				<span class="comments">To carry love, to carry children of our own</span><br />
+				<span class="keyword">------携着这份爱 直到有我们自己的小孩</span><br />
+				<span class="comments">We are still kids, but we're so in love</span><br />
+				<span class="keyword">------我们虽仍年少 但却如此深爱</span><br />
+				<span class="comments">Fighting against all odds</span><br />
+				<span class="keyword">------共同对抗所有逆境的未来</span><br />
+				<span class="comments">I know we'll be alright this time</span><br />
+				<span class="keyword">------我知道我们会一直深爱</span><br />
+				<span class="comments">Be my girl, I'll be your man</span><br />
+				<span class="keyword">------做我的女孩 让我许你未来</span><br />
+				<span class="comments">I see my future in your eyes</span><br />
+				<span class="keyword">------在你眼中我看到美好的将来</span><br />
+				<span class="comments">When I saw you in that dress, looking so beautiful</span><br />
+				<span class="keyword">------当我看到那一袭裙装的你 如此美丽</span><br />
+				<span class="comments">And she looks perfect, I don't deserve this</span><br />
+				<span class="keyword">------她看起来美极了 美到让我觉得自己不值得</span><br />
+				<span class="comments">You look perfect everyday.</span><br />
+				<span class="keyword">------亲爱的 每天的你都是最完美的.</span><br />
+				<br>
+				I want to say:<br />
+				宝儿 ： I love you forever;<br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						亲爱的，这是我们相爱在一起的时光。<br>
+						<!--div id="elapseClock"></div>-->
+						 一共一百叁拾陆天！<br>
+						时间还没停滞，拥有了你，就拥了整个世界！
+					</div>
+					<div id="loveu">
+						爱你直到永远 !<br/>
+						<div class="signature">- 大明</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2013, 2, 28);
+together.setHours(20);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
